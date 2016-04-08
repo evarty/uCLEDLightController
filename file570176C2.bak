@@ -1,0 +1,227 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:TedsComponents
+LIBS:LEDLightHardware-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR10
+U 1 1 57017754
+P 1600 1200
+F 0 "#PWR10" H 1600 1050 50  0001 C CNN
+F 1 "+5V" H 1600 1340 50  0000 C CNN
+F 2 "" H 1600 1200 50  0000 C CNN
+F 3 "" H 1600 1200 50  0000 C CNN
+	1    1600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1200 1600 1300
+Wire Wire Line
+	1600 1300 1850 1300
+$Comp
+L CP C4
+U 1 1 5701776D
+P 1700 1500
+F 0 "C4" H 1725 1600 50  0000 L CNN
+F 1 "10u" H 1725 1400 50  0000 L CNN
+F 2 "" H 1738 1350 50  0000 C CNN
+F 3 "" H 1700 1500 50  0000 C CNN
+	1    1700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1350 1700 1300
+Connection ~ 1700 1300
+$Comp
+L GND #PWR11
+U 1 1 570177A1
+P 2200 1800
+F 0 "#PWR11" H 2200 1550 50  0001 C CNN
+F 1 "GND" H 2200 1650 50  0000 C CNN
+F 2 "" H 2200 1800 50  0000 C CNN
+F 3 "" H 2200 1800 50  0000 C CNN
+	1    2200 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1550 2200 1800
+Wire Wire Line
+	1700 1650 2700 1650
+Connection ~ 2200 1650
+$Comp
+L CP C5
+U 1 1 570177D4
+P 2700 1500
+F 0 "C5" H 2725 1600 50  0000 L CNN
+F 1 "4u7" H 2725 1400 50  0000 L CNN
+F 2 "" H 2738 1350 50  0000 C CNN
+F 3 "" H 2700 1500 50  0000 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1350 2700 1300
+Wire Wire Line
+	2550 1300 2950 1300
+Wire Wire Line
+	2950 1300 2950 1250
+Connection ~ 2700 1300
+$Comp
+L +3V3 #PWR12
+U 1 1 57017834
+P 2950 1250
+F 0 "#PWR12" H 2950 1100 50  0001 C CNN
+F 1 "+3V3" H 2950 1390 50  0000 C CNN
+F 2 "" H 2950 1250 50  0000 C CNN
+F 3 "" H 2950 1250 50  0000 C CNN
+	1    2950 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD1117V33 U2
+U 1 1 57017B09
+P 2200 1300
+F 0 "U2" H 2400 1100 60  0000 C CNN
+F 1 "LD1117V33" H 2100 1450 60  0000 C CNN
+F 2 "" H 2200 1300 60  0000 C CNN
+F 3 "" H 2200 1300 60  0000 C CNN
+	1    2200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP8266-01 U3
+U 1 1 57018272
+P 4150 1900
+F 0 "U3" H 4350 1500 60  0000 C CNN
+F 1 "ESP8266-01" H 4500 2250 60  0000 C CNN
+F 2 "" H 4150 1900 60  0000 C CNN
+F 3 "" H 4150 1900 60  0000 C CNN
+	1    4150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR14
+U 1 1 57018363
+P 4150 1350
+F 0 "#PWR14" H 4150 1200 50  0001 C CNN
+F 1 "+3V3" H 4150 1490 50  0000 C CNN
+F 2 "" H 4150 1350 50  0000 C CNN
+F 3 "" H 4150 1350 50  0000 C CNN
+	1    4150 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1350 4150 1400
+$Comp
+L GND #PWR15
+U 1 1 570183BC
+P 4150 2500
+F 0 "#PWR15" H 4150 2250 50  0001 C CNN
+F 1 "GND" H 4150 2350 50  0000 C CNN
+F 2 "" H 4150 2500 50  0000 C CNN
+F 3 "" H 4150 2500 50  0000 C CNN
+	1    4150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2500 4150 2450
+$Comp
+L +3V3 #PWR13
+U 1 1 57018437
+P 3550 1950
+F 0 "#PWR13" H 3550 1800 50  0001 C CNN
+F 1 "+3V3" H 3550 2090 50  0000 C CNN
+F 2 "" H 3550 1950 50  0000 C CNN
+F 3 "" H 3550 1950 50  0000 C CNN
+	1    3550 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1950 3750 1950
+NoConn ~ 3750 2050
+NoConn ~ 3750 1750
+NoConn ~ 3750 1850
+NoConn ~ 4600 1900
+Text GLabel 4650 1800 2    60   Input ~ 0
+CTRLSignal
+Wire Wire Line
+	4650 1800 4600 1800
+$Comp
+L C C?
+U 1 1 570186A5
+P 3050 2350
+F 0 "C?" H 3075 2450 50  0000 L CNN
+F 1 "u10" H 3075 2250 50  0000 L CNN
+F 2 "" H 3088 2200 50  0000 C CNN
+F 3 "" H 3050 2350 50  0000 C CNN
+	1    3050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 570186D3
+P 3050 2100
+F 0 "#PWR?" H 3050 1950 50  0001 C CNN
+F 1 "+3V3" H 3050 2240 50  0000 C CNN
+F 2 "" H 3050 2100 50  0000 C CNN
+F 3 "" H 3050 2100 50  0000 C CNN
+	1    3050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2100 3050 2200
+$Comp
+L GND #PWR?
+U 1 1 5701870B
+P 3050 2600
+F 0 "#PWR?" H 3050 2350 50  0001 C CNN
+F 1 "GND" H 3050 2450 50  0000 C CNN
+F 2 "" H 3050 2600 50  0000 C CNN
+F 3 "" H 3050 2600 50  0000 C CNN
+	1    3050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2600 3050 2500
+$EndSCHEMATC
